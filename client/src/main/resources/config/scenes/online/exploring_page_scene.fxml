@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.fx_controller.ExploringPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="262.0" layoutX="14.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" width="466.0" />
+      <Button fx:id="homeButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#home" prefHeight="26.0" prefWidth="66.0" text="Home" />
+      <Button fx:id="backButton" layoutX="87.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="66.0" text="Back" />
+      <Button fx:id="refreshButton" layoutX="160.0" layoutY="14.0" mnemonicParsing="false" onAction="#refresh" prefHeight="26.0" prefWidth="66.0" text="Refresh" />
+      <ImageView fx:id="tweetImage" fitHeight="262.0" fitWidth="467.0" layoutX="14.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="sendersImage" fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="320.0" onMouseClicked="#showSender" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="tweetText" layoutX="12.0" layoutY="416.0" prefHeight="35.0" prefWidth="466.0" promptText="enter your comment here" />
+      <Label fx:id="tweetLabel" layoutX="13.0" layoutY="368.0" prefHeight="40.0" prefWidth="466.0" style="-fx-background-color: #bbbbbb;" />
+      <Button fx:id="addCommentButton" layoutX="488.0" layoutY="416.0" mnemonicParsing="false" onAction="#addComment" prefHeight="35.0" prefWidth="119.0" text="Add Comment" />
+      <Button fx:id="nextButton" layoutX="489.0" layoutY="50.0" mnemonicParsing="false" onAction="#showNext" prefHeight="26.0" prefWidth="119.0" text="Next" />
+      <Button fx:id="previousButton" layoutX="489.0" layoutY="83.0" mnemonicParsing="false" onAction="#showPrevious" prefHeight="26.0" prefWidth="119.0" text="Previous" />
+      <Button fx:id="commentsButton" layoutX="489.0" layoutY="115.0" mnemonicParsing="false" onAction="#showComments" prefHeight="26.0" prefWidth="119.0" text="Comments" />
+      <Button fx:id="upperTweetButton" layoutX="489.0" layoutY="148.0" mnemonicParsing="false" onAction="#showUpperTweet" prefHeight="26.0" prefWidth="119.0" text="Upper Post" />
+      <Button fx:id="saveButton" layoutX="489.0" layoutY="191.0" mnemonicParsing="false" onAction="#save" prefHeight="26.0" prefWidth="119.0" text="Save" />
+      <Button fx:id="forwardToUserButton" layoutX="489.0" layoutY="224.0" mnemonicParsing="false" onAction="#forwardToUser" prefHeight="26.0" prefWidth="119.0" text="Forward To User" />
+      <Button fx:id="likeButton" layoutX="489.0" layoutY="347.0" mnemonicParsing="false" onAction="#like" prefHeight="26.0" prefWidth="55.0" text="like" />
+      <Button fx:id="dislikeButton" layoutX="552.0" layoutY="347.0" mnemonicParsing="false" onAction="#dislike" prefHeight="26.0" prefWidth="55.0" text="dislike" />
+      <Button fx:id="searchButton" layoutX="233.0" layoutY="14.0" mnemonicParsing="false" onAction="#search" prefHeight="26.0" prefWidth="66.0" text="Search" />
+      <TextField fx:id="searchText" layoutX="310.0" layoutY="15.0" prefHeight="26.0" prefWidth="298.0" promptText="search bar" />
+      <Label fx:id="nameLabel" layoutX="67.0" layoutY="320.0" prefHeight="40.0" prefWidth="130.0" />
+      <Label fx:id="postedTimeLabel" layoutX="209.0" layoutY="320.0" prefHeight="40.0" prefWidth="130.0" />
+      <Label fx:id="repostedOrEditedLabel" layoutX="349.0" layoutY="320.0" prefHeight="40.0" prefWidth="130.0" />
+      <Label fx:id="likeLabel" layoutX="489.0" layoutY="375.0" prefHeight="26.0" prefWidth="55.0" />
+      <Label fx:id="dislikeLabel" layoutX="552.0" layoutY="375.0" prefHeight="26.0" prefWidth="55.0" />
+      <Button fx:id="repostButton" layoutX="489.0" layoutY="257.0" mnemonicParsing="false" onAction="#repost" prefHeight="26.0" prefWidth="119.0" text="Repost" />
+      <Button fx:id="editButton" layoutX="489.0" layoutY="459.0" mnemonicParsing="false" onAction="#edit" prefHeight="35.0" prefWidth="55.0" text="Edit" />
+      <Button fx:id="deleteButton" layoutX="552.0" layoutY="459.0" mnemonicParsing="false" onAction="#delete" prefHeight="35.0" prefWidth="55.0" text="Delete" />
+      <Button fx:id="reportButton" layoutX="489.0" layoutY="312.0" mnemonicParsing="false" onAction="#report" prefHeight="26.0" prefWidth="119.0" text="Report" />
+   </children>
+</AnchorPane>

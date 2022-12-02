@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.fx_controller.ChatListPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="85.0" layoutX="158.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" width="331.0" />
+      <Button fx:id="deselectUserButton" layoutX="33.0" layoutY="250.0" mnemonicParsing="false" onAction="#deselectUser" prefHeight="26.0" prefWidth="119.0" text="Deselect User" />
+      <Button fx:id="removeThisUserButton" layoutX="33.0" layoutY="217.0" mnemonicParsing="false" onAction="#removeThisUser" prefHeight="26.0" prefWidth="119.0" text="Remove This User" />
+      <Button fx:id="selectGroupButton" layoutX="33.0" layoutY="217.0" mnemonicParsing="false" onAction="#selectGroup" prefHeight="26.0" prefWidth="119.0" text="Select Group" />
+      <Button fx:id="manageGroupButton" layoutX="33.0" layoutY="184.0" mnemonicParsing="false" onAction="#manageGroup" prefHeight="26.0" prefWidth="119.0" text="Manage Group" />
+      <Button fx:id="addUserButton" layoutX="33.0" layoutY="184.0" mnemonicParsing="false" onAction="#addUser" prefHeight="26.0" prefWidth="119.0" text="Add User" />
+      <Button fx:id="selectUserButton" layoutX="33.0" layoutY="184.0" mnemonicParsing="false" onAction="#selectUser" prefHeight="26.0" prefWidth="119.0" text="Select User" />
+      <Button fx:id="homeButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#home" prefHeight="26.0" prefWidth="66.0" text="Home" />
+      <Button fx:id="backButton" layoutX="87.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="66.0" text="Back" />
+      <Button fx:id="messageUserButton" layoutX="160.0" layoutY="14.0" mnemonicParsing="false" onAction="#messageUser" prefHeight="26.0" prefWidth="105.0" text="Message User" />
+      <Button fx:id="nextButton" layoutX="33.0" layoutY="117.0" mnemonicParsing="false" onAction="#showNext" prefHeight="26.0" prefWidth="119.0" text="Next" />
+      <Button fx:id="previousButton" layoutX="33.0" layoutY="150.0" mnemonicParsing="false" onAction="#showPrevious" prefHeight="26.0" prefWidth="119.0" text="Previous" />
+      <ImageView fx:id="profileImage" fitHeight="70.0" fitWidth="70.0" layoutX="167.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="nameLabel" layoutX="243.0" layoutY="169.0" prefHeight="30.0" prefWidth="239.0" style="-fx-background-color: #bbbbbb;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="savedMessagesButton" layoutX="272.0" layoutY="14.0" mnemonicParsing="false" onAction="#showSavedMessages" prefHeight="26.0" prefWidth="105.0" text="Saved Messages" />
+      <Button fx:id="pvGroupsButton" layoutX="384.0" layoutY="14.0" mnemonicParsing="false" onAction="#showPVGroups" prefHeight="26.0" prefWidth="105.0" text="PV Groups" />
+      <Button fx:id="selectionModeButton" layoutX="497.0" layoutY="14.0" mnemonicParsing="false" onAction="#selectionMode" prefHeight="26.0" prefWidth="105.0" text="Selection Mode" />
+      <Button fx:id="deselectGroupButton" layoutX="33.0" layoutY="282.0" mnemonicParsing="false" onAction="#deselectGroup" prefHeight="26.0" prefWidth="119.0" text="Deselect Group" />
+      <Button fx:id="sendMessageButton" layoutX="205.0" layoutY="322.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="26.0" prefWidth="210.0" text="Stop Selection And Send Message" />
+      <Button fx:id="createGroupButton" layoutX="205.0" layoutY="348.0" mnemonicParsing="false" onAction="#createGroup" prefHeight="26.0" prefWidth="210.0" text="Stop Selection And Create Group" />
+      <Label fx:id="sectionTitleLabel" layoutX="32.0" layoutY="79.0" prefHeight="30.0" prefWidth="352.0" text="Taymaz">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

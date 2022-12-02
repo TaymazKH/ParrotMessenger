@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.fx_controller.MainMenuPageController">
+   <children>
+      <Label alignment="CENTER" layoutX="105.0" layoutY="29.0" prefHeight="78.0" prefWidth="389.0" text="PARROT MESSENGER" textAlignment="CENTER" textFill="#00a7e4">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Button fx:id="personalPageButton" layoutX="200.0" layoutY="134.0" mnemonicParsing="false" onAction="#gotoPersonalPage" prefHeight="26.0" prefWidth="200.0" text="Personal Page" />
+      <Button fx:id="timeLinePageButton" layoutX="200.0" layoutY="167.0" mnemonicParsing="false" onAction="#gotoTimeLinePage" prefHeight="26.0" prefWidth="200.0" text="Timeline" />
+      <Button fx:id="exploringPageButton" layoutX="200.0" layoutY="199.0" mnemonicParsing="false" onAction="#gotoExploringPage" prefHeight="26.0" prefWidth="200.0" text="Explore" />
+      <Button fx:id="messagingPageButton" layoutX="200.0" layoutY="233.0" mnemonicParsing="false" onAction="#gotoChatListPage" prefHeight="26.0" prefWidth="200.0" text="Chat list" />
+      <Button fx:id="groupsPageButton" layoutX="200.0" layoutY="267.0" mnemonicParsing="false" onAction="#gotoGroupsPage" prefHeight="26.0" prefWidth="200.0" text="Groups" />
+      <Button fx:id="settingsPageButton" layoutX="200.0" layoutY="300.0" mnemonicParsing="false" onAction="#gotoSettingsPage" prefHeight="26.0" prefWidth="200.0" text="Settings" />
+      <Button fx:id="exitButton" layoutX="200.0" layoutY="345.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="200.0" text="Exit" />
+   </children>
+</AnchorPane>

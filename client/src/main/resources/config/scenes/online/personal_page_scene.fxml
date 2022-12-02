@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.fx_controller.PersonalPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="110.0" layoutX="247.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" width="110.0" />
+      <Button fx:id="toggleMuteButton" layoutX="408.0" layoutY="14.0" mnemonicParsing="false" onAction="#toggleMute" prefHeight="26.0" prefWidth="85.0" text="Toggle Mute" />
+      <Button fx:id="toggleBanButton" layoutX="316.0" layoutY="14.0" mnemonicParsing="false" onAction="#toggleBan" prefHeight="26.0" prefWidth="85.0" text="Toggle Ban" />
+      <Button fx:id="followButton" layoutX="224.0" layoutY="14.0" mnemonicParsing="false" onAction="#follow" prefHeight="26.0" prefWidth="85.0" text="Follow" />
+      <Button fx:id="tweetsButton" layoutX="134.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoTweetsPage" prefHeight="26.0" prefWidth="85.0" text="Tweets" />
+      <Button fx:id="listsButton" layoutX="224.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoListsPage" prefHeight="26.0" prefWidth="85.0" text="Lists" />
+      <Button fx:id="notificationsButton" layoutX="408.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoNotificationsPage" prefHeight="26.0" prefWidth="85.0" text="Notifications" />
+      <Button fx:id="requestsButton" layoutX="316.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoRequestsPage" prefHeight="26.0" prefWidth="85.0" text="Requests" />
+      <ImageView fx:id="profilePicture" fitHeight="100.0" fitWidth="100.0" layoutX="252.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="usernameLabel" layoutX="202.0" layoutY="174.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #bbbbbb;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="realNameLabel" layoutX="202.0" layoutY="240.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #bbbbbb;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="activityLabel" layoutX="202.0" layoutY="266.0" prefHeight="25.0" prefWidth="200.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="birthdateLabel" layoutX="202.0" layoutY="292.0" prefHeight="25.0" prefWidth="200.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailLabel" layoutX="202.0" layoutY="318.0" prefHeight="25.0" prefWidth="200.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="124.0" layoutY="241.0" prefHeight="26.0" prefWidth="78.0" text="Real name :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="267.0" prefHeight="26.0" prefWidth="60.0" text="Activity :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="birthdateTitleLabel" layoutX="130.0" layoutY="293.0" prefHeight="26.0" prefWidth="72.0" text="Birthdate :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailTitleLabel" layoutX="153.0" layoutY="319.0" prefHeight="25.0" prefWidth="49.0" text="Email :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="phoneNumberLabel" layoutX="202.0" layoutY="343.0" prefHeight="25.0" prefWidth="200.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="phoneNumberTitleLabel" layoutX="94.0" layoutY="343.0" prefHeight="26.0" prefWidth="108.0" text="Phone number :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="bioLabel" layoutX="102.0" layoutY="200.0" prefHeight="25.0" prefWidth="400.0" style="-fx-background-color: #bbbbbb;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="homeButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#home" prefHeight="26.0" prefWidth="50.0" text="Home" />
+      <Button fx:id="backButton" layoutX="69.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="50.0" text="Back" />
+      <Button fx:id="changePhoneNumberButton" layoutX="402.0" layoutY="343.0" mnemonicParsing="false" onAction="#editPhoneNumber" prefHeight="26.0" prefWidth="60.0" text="change" />
+      <Button fx:id="changeEmailButton" layoutX="402.0" layoutY="317.0" mnemonicParsing="false" onAction="#editEmail" prefHeight="26.0" prefWidth="60.0" text="change" />
+      <Button fx:id="changeBirthdateButton" layoutX="402.0" layoutY="291.0" mnemonicParsing="false" onAction="#editBirthdate" prefHeight="26.0" prefWidth="60.0" text="change" />
+      <Button fx:id="changeBioButton" layoutX="502.0" layoutY="199.0" mnemonicParsing="false" onAction="#editBio" prefHeight="26.0" prefWidth="78.0" text="change bio" />
+      <Button fx:id="changeProfilePictureButton" layoutX="365.0" layoutY="105.0" mnemonicParsing="false" onAction="#changeProfilePicture" prefHeight="26.0" prefWidth="138.0" text="change profile picture" />
+      <Button fx:id="hideBirthdateButton" layoutX="462.0" layoutY="291.0" mnemonicParsing="false" onAction="#hideBirthDate" prefHeight="26.0" prefWidth="60.0" text="hide" />
+      <Button fx:id="reportButton" layoutX="500.0" layoutY="14.0" mnemonicParsing="false" onAction="#report" prefHeight="26.0" prefWidth="85.0" text="Report" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.fx_controller.GroupsPageController">
+   <children>
+      <AnchorPane fx:id="groupChatSectionPane" layoutX="12.0" layoutY="13.0" prefHeight="487.0" prefWidth="600.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="262.0" layoutX="2.0" layoutY="37.0" stroke="BLACK" strokeType="INSIDE" width="466.0" />
+            <Button fx:id="forwardToUserButton" layoutX="477.0" layoutY="146.0" mnemonicParsing="false" onAction="#forwardToUser" prefHeight="26.0" prefWidth="119.0" text="Forward To User" />
+            <Button fx:id="saveButton" layoutX="477.0" layoutY="113.0" mnemonicParsing="false" onAction="#save" prefHeight="26.0" prefWidth="119.0" text="Save" />
+            <ImageView fx:id="sendersImage" fitHeight="40.0" fitWidth="40.0" layoutX="2.0" layoutY="307.0" onMouseClicked="#showSender" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="messageText" layoutY="403.0" prefHeight="35.0" prefWidth="466.0" promptText="enter your text here" />
+            <Label fx:id="messageLabel" layoutX="1.0" layoutY="355.0" prefHeight="40.0" prefWidth="466.0" style="-fx-background-color: #bbbbbb;" />
+            <Button fx:id="newMessageButton" layoutX="476.0" layoutY="403.0" mnemonicParsing="false" onAction="#newMessage" prefHeight="25.0" prefWidth="119.0" text="New Message" />
+            <Button fx:id="newTimedMessageButton" layoutX="476.0" layoutY="431.0" mnemonicParsing="false" onAction="#newTimedMessage" prefHeight="25.0" prefWidth="119.0" text="New Timed Message">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Label fx:id="nameLabel" layoutX="55.0" layoutY="307.0" prefHeight="40.0" prefWidth="130.0" />
+            <Label fx:id="postedTimeLabel" layoutX="197.0" layoutY="307.0" prefHeight="40.0" prefWidth="130.0" />
+            <Label fx:id="repostedOrEditedLabel" layoutX="337.0" layoutY="307.0" prefHeight="40.0" prefWidth="130.0" />
+            <Button fx:id="editButton" layoutX="476.0" layoutY="460.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="55.0" text="Edit" />
+            <Button fx:id="deleteButton" layoutX="540.0" layoutY="460.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="55.0" text="Delete" />
+            <Button fx:id="showMembersButton" layoutX="148.0" layoutY="1.0" mnemonicParsing="false" onAction="#showMembers" prefHeight="26.0" prefWidth="66.0" text="Members" />
+            <Button fx:id="leaveButton" layoutX="221.0" layoutY="1.0" mnemonicParsing="false" onAction="#leave" prefHeight="26.0" prefWidth="66.0" text="Leave" />
+            <ImageView fx:id="messageImage" fitHeight="262.0" fitWidth="467.0" layoutX="2.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="groupSelectionSectionPane" layoutX="23.0" layoutY="121.0" prefHeight="107.0" prefWidth="590.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="76.0" layoutX="137.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" width="317.0" />
+            <Button fx:id="enterButton" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#enter" prefHeight="26.0" prefWidth="119.0" text="Enter" />
+            <Label fx:id="groupNameLabel" layoutX="206.0" layoutY="34.0" prefHeight="30.0" prefWidth="239.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="groupNameTitleLabel" layoutX="140.0" layoutY="34.0" prefHeight="30.0" prefWidth="66.0" text="Group :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="memberCountTitleLabel" layoutX="140.0" layoutY="62.0" prefHeight="30.0" prefWidth="138.0" text="Member count :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="memberCountLabel" layoutX="278.0" layoutY="62.0" prefHeight="30.0" prefWidth="119.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="newGroupButton" layoutX="466.0" layoutY="5.0" mnemonicParsing="false" onAction="#newGroup" prefHeight="26.0" prefWidth="119.0" text="New Group" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="membersSectionPane" layoutX="73.0" layoutY="112.0" prefHeight="202.0" prefWidth="546.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="76.0" layoutX="11.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" width="340.0" />
+            <Button fx:id="transferOwnershipButton" layoutX="416.0" layoutY="80.0" mnemonicParsing="false" onAction="#transferOwnership" prefHeight="26.0" prefWidth="119.0" text="Transfer Ownership" />
+            <Button fx:id="inviteButton" layoutX="416.0" layoutY="14.0" mnemonicParsing="false" onAction="#invite" prefHeight="26.0" prefWidth="119.0" text="Invite" />
+            <Button fx:id="kickButton" layoutX="416.0" layoutY="47.0" mnemonicParsing="false" onAction="#kick" prefHeight="26.0" prefWidth="119.0" text="Kick" />
+            <ImageView fx:id="profileImage" fitHeight="70.0" fitWidth="70.0" layoutX="14.0" layoutY="123.0" onMouseClicked="#showSender" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="currentMemberLabel" layoutX="93.0" layoutY="143.0" prefHeight="30.0" prefWidth="239.0" style="-fx-background-color: #bbbbbb;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="homeButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#home" prefHeight="26.0" prefWidth="66.0" text="Home" />
+      <Button fx:id="backButton" layoutX="87.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="66.0" text="Back" />
+      <Button fx:id="nextButton" layoutX="489.0" layoutY="50.0" mnemonicParsing="false" onAction="#showNext" prefHeight="26.0" prefWidth="119.0" text="Next" />
+      <Button fx:id="previousButton" layoutX="489.0" layoutY="83.0" mnemonicParsing="false" onAction="#showPrevious" prefHeight="26.0" prefWidth="119.0" text="Previous" />
+   </children>
+</AnchorPane>
